@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusa Vision - Acessibilidade para Todos</title>
+    
+    <!-- Estilos CSS embutidos -->
+    <style>
+        /* Estilo geral */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #4B0082; /* Roxo */
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #4B0082;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header .logo h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Seção Hero */
+        .hero {
+            background-color: #E0E0FF;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            color: #4B0082;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .hero .btn-primary {
+            background-color: #4B0082;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .hero .btn-primary:hover {
+            background-color: #3A0066;
+        }
+
+        /* Seção de Preços */
+        #precos {
+            background-color: #F1F1F1;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        #precos h2 {
+            color: #4B0082;
+        }
+
+        .price-card {
+            background-color: white;
+            border: 1px solid #DDD;
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            width: 200px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .price-card h3 {
+            color: #4B0082;
+        }
+
+        .price-card button {
+            background-color: #4B0082;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .price-card button:hover {
+            background-color: #3A0066;
+        }
+
+        /* Seção Sobre */
+        #sobre {
+            padding: 40px 20px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #4B0082;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Inclusa Vision</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#precos">Preços</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Transformando a acessibilidade digital</h2>
+        <p>Facilitamos a navegação online para pessoas com deficiências visuais. Explore as nossas soluções!</p>
+        <a href="#precos" class="btn-primary">Ver Preços</a>
+    </section>
+
+    <section id="precos">
+        <h2>Preços</h2>
+        <div class="price-card">
+            <h3>Plano Básico</h3>
+            <p>R$ 29,99/mês</p>
+            <button class="btn-secondary">Escolher</button>
+        </div>
+        <div class="price-card">
+            <h3>Plano Premium</h3>
+            <p>R$ 59,99/mês</p>
+            <button class="btn-secondary">Escolher</button>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre a Inclusa Vision</h2>
+        <p>A Inclusa Vision é uma plataforma inovadora que oferece soluções para garantir acessibilidade digital para todos.</p>
+    </section>
+
+    <footer id="contato">
+        <p>Entre em contato: <a href="mailto:contato@inclusavision.com">contato@inclusavision.com</a></p>
+    </footer>
+
+    <!-- JavaScript embutido -->
+    <script>
+        // Exemplo simples de interação com os botões de preço
+        document.querySelectorAll('.btn-secondary').forEach(button => {
+            button.addEventListener('click', () => {
+                alert("Você escolheu o plano: " + button.previousElementSibling.textContent);
+            });
+        });
+    </script>
+
+</body>
+</html>
